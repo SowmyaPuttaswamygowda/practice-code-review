@@ -1,11 +1,18 @@
 /** .........
- * Sum of two numbers.
+ * intersection of two numbers.
  *
- * @param {number} num1 - The first number to sum.
- * @param {number} num2 - The second number to sum.
- * @returns {number} The sum of num1 and num2.
+ * @param {Array} [array=[]] - The array to inspect.
+ * @param {Array} [values=[]] - The values to include.
+ * @returns {Array} Returns the new array of filtered values.
  */
 
-export const solutionName = (num1, num2) => {
-    return num1 + num2;
+export const intersection = (array1 = [], array2 = []) => {
+    console.log('Array 1:', array1);
+    console.log('Array 2:', array2);
+    
+    const result = array1.filter(element => array2.includes(element));
+    console.log('Result:', result);
+    
+    return result;
 };
+
